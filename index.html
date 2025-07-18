@@ -404,26 +404,30 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-        <form action="https://formsubmit.co/aubreylayosa05@gmail.com" method="POST">
+        <form action="https://formsubmit.co/aubreylayosa05@gmail.com" method="POST" style="max-width: 500px; margin: 0 auto;">
             <!-- Redirect to your own thank-you page -->
             <input type="hidden" name="_next" value="https://abrylys.github.io/portfoliio/thanks.html">
-
-            <!-- Disable FormSubmit branding/email confirmation -->
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
-            
+
             <!-- Form fields -->
-            <div style="margin-bottom: 10px;">
-                <input type="text" name="name" placeholder="Your Name" required>
+            <div style="margin-bottom: 15px;">
+                <input type="text" name="name" placeholder="Your Name" required 
+                    style="width: 100%; padding: 12px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc;">
             </div>
-            <div style="margin-bottom: 10px;">
-                <input type="email" name="email" placeholder="Your Email" required>
+            <div style="margin-bottom: 15px;">
+                <input type="email" name="email" placeholder="Your Email" required 
+                    style="width: 100%; padding: 12px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc;">
             </div>
-            <div style="margin-bottom: 10px;">
-                <textarea name="message" placeholder="Your Message" required></textarea>
+            <div style="margin-bottom: 15px;">
+                <textarea name="message" placeholder="Your Message" required rows="6" 
+                        style="width: 100%; padding: 12px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
             </div>
             
-            <button type="submit">Send Message</button>
+            <button type="submit" 
+                    style="padding: 12px 24px; font-size: 16px; background-color: #2C3E50; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                Send Message
+            </button>
         </form>
          </div>
     </section><!-- end of contact form -->
