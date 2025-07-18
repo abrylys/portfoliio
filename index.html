@@ -405,17 +405,26 @@
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
         <form action="https://formsubmit.co/aubreylayosa05@gmail.com" method="POST">
-            <div style="margin-bottom: 10px;">
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <textarea name="message" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
+        <!-- Redirect to your own thank-you page -->
+         <input type="hidden" name="_next" value="https://abrylys.github.io/portfoliio/thanks.html">
+    
+        <!-- Disable FormSubmit branding/email confirmation -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        
+        <!-- Form fields -->
+        <div style="margin-bottom: 10px;">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        
+        <button type="submit">Send Message</button>
+    </form>
          </div>
     </section><!-- end of contact form -->
         </div><!-- end of container -->
